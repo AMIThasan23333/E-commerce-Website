@@ -140,6 +140,13 @@ input {
 
 /*=============== HEADER SECTION ===============*/
 
+.header {
+    width: 100%;
+    background: var(--container-color);
+    position: fixed;
+    top: 0;left: 0;
+    z-index: var(--z-fixed);
+}
 
 /*=============== NAV ===============*/
 
