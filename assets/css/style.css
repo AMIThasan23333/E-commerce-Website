@@ -247,6 +247,20 @@ input {
 
 /*=============== BUTTONS ===============*/
 
+.button {
+    display: inline-block;
+    background: var(--first-color);
+    color: #fff;
+    padding: 1rem 1.75rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    transition: .3s;
+
+}
+
+.button:hover {
+    background: var(--first-color-alt);
+}
 
 
 /*========== DISCOUNT SECTION ==========*/
@@ -314,7 +328,7 @@ input {
     height: 100%;
     box-shadow: -2px 0 4px var(--shadow);
     top: 0;
-    right: 0;
+    right: -100%;
     padding: 3.5rem 2rem;
     transition: .4s;
 
@@ -352,9 +366,24 @@ input {
     width: 100%;
 }
 
+.signup {
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+
+}
+
+.signup a {
+
+    color: var(--first-color);
+
+}
+
 
 /* Show login */
-
+.show-login{
+    right: 0;
+}
 
 /*=============== CART ===============*/
 /* img */
