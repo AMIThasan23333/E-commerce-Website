@@ -219,6 +219,12 @@ input {
     position: relative;
 }
 
+.scroll-header {
+    background-color: var(--body-color);
+    box-shadow: 0 1px 4px var(--shadow);
+}
+
+
 .active-link::before {
     content:  ' ';
     position: absolute;
@@ -252,9 +258,9 @@ input {
     padding-top: 2rem;
 }
 
-.home__img {
+.home__group img{
 
-    height: 420px;
+    height: 350px;
     transform: translateY(-3rem);
     justify-self: center;
 
@@ -320,6 +326,34 @@ input {
 .home__buttons {
     display: flex;
     justify-content: space-between;
+
+}
+
+
+.swiper-pagination {
+    padding: initial;
+    margin-top: var(--mb-2-5);
+
+}
+
+.swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+    background: var(--title-color);
+    opacity: 1;
+
+}
+
+.swiper-pagination-horizontal .swiper-pagination-bullet .swiper-pagination-bullet {
+
+    margin: 0 .5rem;
+
+}
+
+.swiper-pagination-bullet-active {
+    width: 1.5rem;
+    height: 5px;
+    border-radius: .5rem;
 
 }
 
