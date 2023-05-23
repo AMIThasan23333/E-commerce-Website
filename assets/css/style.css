@@ -816,7 +816,6 @@ input {
     transition: .4s;
 
 }
-
 .cart_title-center {
     font-size: var(--h2-font-size);
     text-align: center;
@@ -950,8 +949,30 @@ input {
 .scrollup__icon {
     font-size: 1.5rem;
     color: #fff;
-    
+
 }
+
+.show-scroll {
+
+    bottom: 3rem;
+
+}
+
+::-webkit-scrollbar {
+    width: .60rem;
+    background: var(--scroll-bar--color);
+    border-radius: .5rem;
+
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background: var(--scroll-thumb-color);
+    border-radius: .5rem;
+
+}
+
 
 /*=============== LIGHTBOX ===============*/
 

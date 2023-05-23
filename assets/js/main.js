@@ -12,8 +12,28 @@
 /*=============== SHOW CART ===============*/
 
 
+ const cart = document.getElementById('cart');
+
+ cartShop =document.getElementById('cart-shop')
+
+ cartClose = document.getElementById('cart__close')
+
+
+
 /*===== CART SHOW =====*/
 /* Validate if constant exists */
+if(cartShop) {
+  cartShop.addEventListener("click", () => {
+    cart.classList.add('show-cart')
+  })
+}
+
+
+if(cartClose) {
+  cartClose.addEventListener("click", () => {
+    cart.classList.remove('show-cart')
+  })
+}
 
 
 /*===== CART HIDDEN =====*/
