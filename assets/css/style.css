@@ -663,8 +663,68 @@ input {
 
 .footer__logo-icon {
     font-size: 1.25rem;
+
+}
+
+.footer__description{
+    margin-bottom: var(--mb-2-5);
+
+} 
+.footer__social {
+    display: flex;
+    column-gap: .75rem;
+
+}
+
+.footer__social-link {
+
+    display: inline-flex;
+    background: var(--container-color);
+    padding: .25rem;
+    border-radius: .25rem;
+    color: var(--title-color);
+    font-size: 1rem;
+
+}
+
+.footer__social-link:hover {
+    background: var(--first-color);
+    color: #fff;
+
+}
+
+.footer__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.footer__links {
+    display: grid;
+    row-gap: .35rem;
+
+}
+
+.footer__link {
+
+    font-size: var(--smaller-font-size);
+    color: var(--text-color);
+    transition: .3s;
+
+}
+
+.footer__link:hover {
+    color: var(--title-color);
+
+}
+
+.footer__copy{
+    display: block;
+    text-align: center;
+    font-size: var(--smaller-font-size);
+    margin-top: 6rem;
     
 }
+
 
 /*=============== SCROLL UP ===============*/
 
