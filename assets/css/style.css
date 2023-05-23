@@ -637,7 +637,34 @@ input {
 
 
 /*=============== FOOTER ===============*/
+.footer {
+    position: relative;
+    overflow: hidden;
 
+}
+
+.footer__container {
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    column-gap: 1rem;
+
+}
+
+.footer__logo {
+    color: var(--title-color);
+    text-transform: lowercase;
+    font-weight: var(--font-bold);
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+    margin-bottom: var(--mb-1);
+}
+
+.footer__logo-icon {
+    font-size: 1.25rem;
+    
+}
 
 /*=============== SCROLL UP ===============*/
 
