@@ -954,6 +954,7 @@ input {
 
 .show-scroll {
 
+    display: none;
     bottom: 3rem;
 
 }

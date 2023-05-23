@@ -42,8 +42,29 @@ if(cartClose) {
 
 /*=============== SHOW LOGIN ===============*/
 
+   const login = document.getElementById('Login'),
+
+        loginButton = document.getElementById('login-toggle'),
+        loginClose = document.getElementById('Login-close')
+
+
+
 
 /*===== LOGIN SHOW =====*/
+
+if( loginButton) {
+   loginButton.addEventListener("click", () => {
+    login.classList.add('show-login')
+  })
+}
+
+if(loginClose) {
+   loginClose.addEventListener("click", () => {
+   login.classList.remove('show-login')
+ })
+}
+
+
 /* Validate if constant exists */
 
 
@@ -61,8 +82,9 @@ if(cartClose) {
         el: ".swiper-pagination",
         clickable: true,
     }
-
   })
+
+
 
 
 
@@ -94,7 +116,15 @@ var newSwiper = new Swiper (".new-swiper", {
 })
 /*=============== SHOW SCROLL UP ===============*/ 
 
+function scrollUp (){
 
+  const scrollup= document.getElementById('scrollup');
+
+  if(this.scrollY >= 280) scrollup.classList.remove('show-scroll');
+  else scrollup.classList.add('show-scroll')
+}
+
+window.addEventListener('scroll',scrollUp)
 /*=============== LIGHT BOX ===============*/
 
 
