@@ -722,7 +722,7 @@ input {
     text-align: center;
     font-size: var(--smaller-font-size);
     margin-top: 6rem;
-    
+
 }
 
 
@@ -926,7 +926,32 @@ input {
 .show-cart {
     right: 0;
 }
+/* scscrollup */
 
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: 3rem;
+    background: var(--first-color);
+    border-radius: .4rem;
+    display: inline-flex;
+    padding: .25rem;
+    z-index: var(--z-tooltip);
+    opacity: .8;
+    transition: .4s;
+}
+
+.scrollup:hover {
+
+    opacity: 1;
+
+}
+
+.scrollup__icon {
+    font-size: 1.5rem;
+    color: #fff;
+    
+}
 
 /*=============== LIGHTBOX ===============*/
 
