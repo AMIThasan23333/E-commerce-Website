@@ -61,7 +61,17 @@ window.addEventListener("scroll", scrollHeader)
 
 /*=============== NEW SWIPER ===============*/
 
+var newSwiper = new Swiper (".new-swiper", {
+  spaceBetween : 10,
+  slidePerview : "auto",
+  centeredSlides: true,
+  Loop: 'true',
+  pagination : {
+      el: ".swiper-pagination",
+      clickable: true,
+  }
 
+})
 /*=============== SHOW SCROLL UP ===============*/ 
 
 
