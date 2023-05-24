@@ -121,6 +121,11 @@ input {
     margin-bottom: var(--mb-3);
 }
 
+.breadcrumb__subtitle span{
+
+    color: var(--first-color);
+}
+
 .section__title,
 .breadcrumb__title,
 .breadcrumb__subtitle {
