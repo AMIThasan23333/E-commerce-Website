@@ -497,21 +497,17 @@ input {
     column-gap: .5rem;
 
 }
-
 .new__price {
     font-weight: var(--font-medium);
     color: var(--title-color);
 }
-
 .new__discount {
-
     color: var(--first-color);
     font-size: var(--smaller-font-size);
     text-decoration:line-through;
     font-weight: var(--font-medium);
-
 }
-
+/* imp */
 .new__button {
 
     display: inline-block;
@@ -526,12 +522,12 @@ input {
     font-size: 1.25rem;
 
 }
-
+/* imp */
 .new__content:hover .new__img {
     transform: translateY(-.5rem);
 
 }
-
+/* imp */
 .new__content:hover .new__button {
     right: 0;
 }
@@ -558,9 +554,7 @@ input {
     background-color: var(--body-color);
     padding: 2.5rem 3rem 2rem 1.5rem;
 }
-
 .steps__card-number {
-
     display: inline-block;
     background-color: var(--first-color);
     color: #fff;
@@ -1085,13 +1079,14 @@ input {
         height: 250px;
 
     }
+  
+  
 
-
-    .discount__img{
-
+     .discount__img{
+         width: 90px;
         justify-content: center;
         order: 1;
-    }
+    } 
 
 
  
@@ -1120,7 +1115,7 @@ input {
     .login,
     .cart{
         width: 100%;
-        
+
     }
 
 
@@ -1128,4 +1123,26 @@ input {
 }
 
 /* For small devices */
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 320px) {
+
+
+    .container {
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+
+    }
+
+    .nav{
+        column-gap: 0;
+    }
+
+    .home__img {
+        height: 200px;
+    }
+
+    .discount__container {
+       display: flex;
+       flex-direction: column;
+    
+    }
+}
