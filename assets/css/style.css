@@ -680,7 +680,7 @@ input {
 
 
 .shop__img {
-    width: 150px;
+    width: 120px;
     margin-bottom: var(--mb-1);
     transition: .3s;
 
@@ -1123,6 +1123,34 @@ input {
 
 }
 
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: .8rem;
+    margin-top: var(--mb-2-5);
+    font-style: var(--normal-font-size);
+
+}
+
+
+.pagination span{
+
+    width: 2.2rem;
+    height: 2.2rem;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.pagination .current {
+    background-color: var(--first-color);
+    color: #fff;
+
+}
+
 
 /*=============== LIGHTBOX ===============*/
 
@@ -1161,6 +1189,8 @@ input {
         height: 300px;
         transform: translateY(0);
     }
+
+
 
 
 
@@ -1231,6 +1261,19 @@ input {
         justify-content: center;
         order: 1;
     } 
+
+
+    .shop__container {
+        grid-template-columns: 520px;
+        justify-content: center;
+        row-gap: 2rem;
+
+    }
+
+    .pagination{
+        justify-content: center;
+    }
+
 
 
  
