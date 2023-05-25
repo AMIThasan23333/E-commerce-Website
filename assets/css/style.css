@@ -619,6 +619,13 @@ input {
 /*=============== SHOP PAGE ===============*/
 
 
+.shop__container {
+    grid-template-columns: 1.7fr 3.3fr;
+    column-gap: 1.8rem;
+}
+
+
+
 /*=============== PAGINATION ===============*/
 
 
