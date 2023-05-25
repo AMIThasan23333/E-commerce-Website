@@ -1305,6 +1305,30 @@ input {
 
     }
 
+    .shop__container {
+        grid-template-columns: .8fr;
+
+    }
+
+    .shop__items {
+        grid-template-columns: 1fr;   
+    }
+
+    .sidebar {
+        padding: 1.25rem 1.4rem;
+    }
+
+    .pagination span {
+        height: 1.8rem;
+        width: 1.8rem;
+        line-height: 30px;
+    }
+
+
+    .pagination{
+        column-gap: .4rem;
+    }
+
 
 
 }
