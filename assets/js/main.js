@@ -148,4 +148,33 @@ window.addEventListener('scroll',scrollUp)
 /*=============== QUESTIONS ACCORDION ===============*/
 
 
+const accordionItem = document.querySelectorAll('.question__item')
+
+accordionItem.forEach((item) => {
+
+  const accordionHeader = item.querySelector('.questions__header')
+
+  accordionHeader.addEventListener('click', () => {
+
+    const openItem = document.querySelector('.accordion-open')
+     
+    toggleItem(item)
+  })
+
+})
+
+
+ const toggleItem = (item) => {
+
+  const accordionContent  = item.querySelector('.questions_content')
+
+  accordionContent.style.height = accordionContent.scrollHeight + 'px';
+
+  item.classList.add('accordion-open')
+  
+ }
+
+
+
+
 /*=============== STYLE SWITCHER ===============*/
