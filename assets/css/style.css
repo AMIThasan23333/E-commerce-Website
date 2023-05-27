@@ -766,6 +766,33 @@ input {
 
 /*=============== ABOUT PAGE ===============*/
 
+.about__container {
+
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 7rem;
+
+}
+
+.about__img {
+    width: 380px;
+    justify-self: center;
+
+}
+
+.about__title {
+
+    margin-bottom: var(--mb-1);
+    text-align: left;
+
+}
+.about__description {
+
+    margin-bottom: var(--mb-2);
+}
+
+
+
+
 
 /*=============== BLOG PAGE ===============*/
 
@@ -1464,7 +1491,7 @@ input {
 
      .contact__container {
         grid-template-columns: 1fr;
-        
+
      }
  
 
