@@ -135,7 +135,7 @@ var newSwiper = new Swiper (".new-swiper", {
 
 function scrollUp (){
 
-  const scrollup= document.getElementById('scrollup');
+  const scrollup= document.getElementById('scroll-up');
 
   if(this.scrollY >= 280) scrollup.classList.remove('show-scroll');
   else scrollup.classList.add('show-scroll')
@@ -147,8 +147,7 @@ window.addEventListener('scroll',scrollUp)
 
 /*=============== QUESTIONS ACCORDION ===============*/
 
-
-const accordionItem = document.querySelectorAll('.question__item')
+const accordionItem = document.querySelectorAll('.questions__item')
 
 accordionItem.forEach((item) => {
 
@@ -166,11 +165,22 @@ accordionItem.forEach((item) => {
 
  const toggleItem = (item) => {
 
-  const accordionContent  = item.querySelector('.questions_content')
+  const accordionContent  = item.querySelector('.questons__content')
 
-  accordionContent.style.height = accordionContent.scrollHeight + 'px';
 
-  item.classList.add('accordion-open')
+  if(item.classList.contains('accordion-open')){
+
+    accordionContent.removeAttribute('style')
+    item.classList.remove('accordion-open')
+
+
+  }
+     else  {
+      accordionContent.style.height = accordionContent.scrollHeight + 'px';
+      item.classList.add('accordion-open')
+     }
+
+
   
  }
 

@@ -825,33 +825,28 @@ input {
 
 /*=============== FAQ PAGE ===============*/
 
-.question__container {
+.questions__container {
 
     grid-template-columns: repeat(2,1fr);
     gap: 1.5rem;
+ 
+
 }
 
-.question__group{
+.questions__group{
     display: grid;
-
     gap: 1.5rem;
 }
 
-.question__item {
-
+.questions__item {
     background-color: var(--container-color);
     border-radius: .25rem;
     gap: 1.5rem;
-
 }
 
-
 .questions__item-title {
-
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
-
-
 }
 
 .questions__icon {
