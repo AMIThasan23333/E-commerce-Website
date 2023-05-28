@@ -763,6 +763,22 @@ input {
 
 /*=============== DETAILS PAGE ===============*/
 
+.details__container {
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    column-gap: 3rem;
+
+}
+
+
+.product__images{
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.4rem;
+}
+
+
+
+
 
 /*=============== ABOUT PAGE ===============*/
 
@@ -1524,7 +1540,7 @@ input {
 
         grid-template-columns: 1fr;
         row-gap: 1rem;
-        
+
      }
  
 
