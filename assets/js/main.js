@@ -165,7 +165,7 @@ accordionItem.forEach((item) => {
 
  const toggleItem = (item) => {
 
-  const accordionContent  = item.querySelector('.questons__content')
+  const accordionContent  = item.querySelector('.questions__content')
 
 
   if(item.classList.contains('accordion-open')){
@@ -175,13 +175,12 @@ accordionItem.forEach((item) => {
 
 
   }
+
+  
      else  {
       accordionContent.style.height = accordionContent.scrollHeight + 'px';
       item.classList.add('accordion-open')
      }
-
-
-  
  }
 
 
