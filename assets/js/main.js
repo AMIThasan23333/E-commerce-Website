@@ -144,6 +144,23 @@ function scrollUp (){
 window.addEventListener('scroll',scrollUp)
 /*=============== LIGHT BOX ===============*/
 
+   const productItems = document.querySelectorAll(".product__img"),
+   totalProductItems = productItems.length,
+   lightbox = document.querySelector(".lightbox")
+   lightboxImg = lightbox.querySelector(".lightbox__img")
+   console.log(lightboxImg);
+   lightboxClose = lightbox.querySelector(".lightbox__close")
+   console.log(lightboxClose);
+   lightboxCounter = lightbox.querySelector(".lightbox__counter")
+
+   let itemIndex = 0;
+
+   for(let i =0; i< totalProductItems; i++){
+
+    console.log(productItems[i]);
+    
+   }
+
 
 /*=============== QUESTIONS ACCORDION ===============*/
 
