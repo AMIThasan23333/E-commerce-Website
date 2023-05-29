@@ -157,10 +157,33 @@ window.addEventListener('scroll',scrollUp)
 
    for(let i =0; i< totalProductItems; i++){
 
-    console.log(productItems[i]);
     
+    productItems[i].addEventListener("click", function () {
+      
+      itemIndex = i;
+      changeItem();
+      toggleLightbox();
+
+
+    })
    }
 
+
+   function toggleLightbox ( ){
+
+    lightbox.classList.toggle("open")
+   }
+
+   
+    function changeItem(){
+      imgSrc = productItems[itemIndex].querySelector(".product__img img").getAttribute("src")
+      console.log(imgSrc);
+
+      lightbox.src = imgSrc;
+
+      lightboxCounter.innerHTML = (itemIndex + 1) + 'of' + totalProductItems;
+}
+   
 
 /*=============== QUESTIONS ACCORDION ===============*/
 
