@@ -147,6 +147,9 @@ window.addEventListener('scroll',scrollUp)
    const productItems = document.querySelectorAll(".product__img"),
    totalProductItems = productItems.length,
    lightbox = document.querySelector(".lightbox")
+   
+   console.log(lightbox);
+
    lightboxImg = lightbox.querySelector(".lightbox__img")
    console.log(lightboxImg);
    lightboxClose = lightbox.querySelector(".lightbox__close")
@@ -176,24 +179,49 @@ window.addEventListener('scroll',scrollUp)
 
    
     function changeItem(){
+
+
       imgSrc = productItems[itemIndex].querySelector(".product__img img").getAttribute("src")
+    
+
       console.log(imgSrc);
 
-      lightbox.src = imgSrc;
-
+      lightboxImg.src = imgSrc;
       lightboxCounter.innerHTML = (itemIndex + 1) + 'of' + totalProductItems;
 }
+
+
+ function nextItem(){
+  if (itemIndex == totalProductItems-1){
+    itemIndex = 0;
+  }else {
+    itemIndex++;
+  }
+ changeItem()
+ }
+
+
+ function prevItem(){
+
+  if (itemIndex == 0){
+    itemIndex = totalProductItems -1;
+
+
+   }  else {
+
+    itemIndex--;
+
+  }
+ changeItem()
+
+ }
    
 
 /*=============== QUESTIONS ACCORDION ===============*/
 
   const accordionItem = document.querySelectorAll('.questions__item')
-
   accordionItem.forEach((item) => {
-
   const accordionHeader = item.querySelector('.questions__header')
-
-
   accordionHeader.addEventListener('click', () => {
     const openItem = document.querySelector('.accordion-open')
     toggleItem(item)
@@ -201,16 +229,13 @@ window.addEventListener('scroll',scrollUp)
       toggleItem(openItem)
     }
   })
-
 })
 
-
  const toggleItem = (item) => {
-
-  const accordionContent  = item.querySelector('.questions__content')
-  if(item.classList.contains('accordion-open')){
-    accordionContent.removeAttribute('style')
-    item.classList.remove('accordion-open')
+ const accordionContent  = item.querySelector('.questions__content')
+ if(item.classList.contains('accordion-open')){
+ accordionContent.removeAttribute('style')
+  item.classList.remove('accordion-open')
   }
      else  {
       accordionContent.style.height = accordionContent.scrollHeight + 'px';
