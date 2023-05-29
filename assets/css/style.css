@@ -995,11 +995,8 @@ input {
 /*=============== FAQ PAGE ===============*/
 
 .questions__container {
-
     grid-template-columns: repeat(2,1fr);
     gap: 1.5rem;
- 
-
 }
 
 .questions__group{
@@ -1022,15 +1019,21 @@ input {
     font-size: 1.25rem;
     color: var(--title-color);
 }
-
-.question__description {
-
+.questions__description {
     font-size: var(--smaller-font-size);
     padding: 0 3.5rem 2.2rem 2.75rem;
-
 }
-
-
+.questions__header {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+.questions__content {
+    overflow: hidden;
+    height: 0;
+}
 .questions__item,
 .questions__header,
 .questions__item-title,
@@ -1044,8 +1047,9 @@ input {
 
 
 .accordion-open .questions__header,
-.accordion-open .questions_content {
-    background-color: var(--first-color);
+.accordion-open .questions__content {
+   
+    background-color: red;
 
 }
 
@@ -1501,6 +1505,20 @@ input {
 
 /*=============== LIGHTBOX ===============*/
 
+.lightbox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    z-index: var(--z-fixed);
+    display: flex;
+    justify-content: center;
+    cursor: zoom-out;
+    padding: 1.8rem;
+
+}
 
 /* lightbox open */
 
